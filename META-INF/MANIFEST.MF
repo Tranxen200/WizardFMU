@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SWT-plugin
+Bundle-SymbolicName: com.quality.SWT-plugin; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.quality.swt_plugin.Activator
+Bundle-Vendor: QUALITY
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jdt.core;bundle-version="3.7.3",
+ org.eclipse.core.resources;bundle-version="3.7.101",
+ org.eclipse.ui.forms;bundle-version="3.5.101"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: com.sun.jna;version="3.4.0.t20120117_1605",
+ org.ptolemy.fmi,
+ org.ptolemy.fmi.type,
+ org.slf4j

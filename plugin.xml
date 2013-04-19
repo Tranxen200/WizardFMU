@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Sample Action Set"
+            visible="true"
+            id="com.quality.SWT-plugin.actionSet">
+         <menu
+               label="Sample &amp;Menu"
+               id="sampleMenu">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               label="&amp;Sample SWT"
+               icon="icons/sample.gif"
+               class="com.quality.swtplugin.actions.Sample_SWT"
+               tooltip="SWT stuff"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="com.quality.swtplugin.actions.Sample_SWT">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>
